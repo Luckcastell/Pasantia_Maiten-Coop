@@ -9,9 +9,7 @@ Está diseñado para lograr **alta puntuación en Lighthouse** (≥90 en rendimi
 
 /maiten_servicios/
 ├── index.html
-
 ├── img/
-
 │ ├── servicios-hero.webp
 
 │ ├── galeria-1.webp
