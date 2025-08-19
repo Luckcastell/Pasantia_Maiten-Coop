@@ -1,0 +1,1 @@
+Opte por un diseño sin muchos colores para centrarme mas en la estructura de la web. También decidi utilizar tarjetas para la estructura ya que estoy acostumbrado a trabajar utilizandolas y son de gran ayuda a la hora de hacer un diseño responsive.

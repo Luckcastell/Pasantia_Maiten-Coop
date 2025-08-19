@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="es-AR" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios de Maitén Cooperativa | Asistencia y Créditos</title>
+  <meta name="description" content="Conocé los servicios de Maitén Cooperativa: Asistencia Hogar, Asistencia Legal, Asistencia Informática, Asistencia para Mascotas y Créditos a jubilados. Beneficios, requisitos, descargas y una landing con formulario para enviar documentos.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    :root{
+      --bs-body-font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    .hero{background:linear-gradient(180deg,#0d6efd 0%,#0b5ed7 100%); color:#fff;}
+    .hero .lead{max-width: 60ch}
+    .icon-32{width:2rem;height:2rem}
+    .icon-48{width:3rem;height:3rem}
+    .trusted-badge{border:1px solid rgba(0,0,0,.08); border-radius: .75rem; padding:.75rem 1rem; background: #fff}
+    .faq-accordion .accordion-button:not(.collapsed){background-color:#eef5ff}
+    .service-card{border-radius:1rem}
+    .sticky-cta{position:sticky; bottom:0; z-index:1030}
+    .visually-strong{font-weight: 700}
+    .counter{font-variant-numeric: tabular-nums}
+    .required::after{content:" *"; color:#dc3545}
+    figcaption{padding-top: 15px;}
+    @media (prefers-reduced-motion: reduce){
+      .animate{transition:none!important}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Asistencia Hogar: ¿Qué cubre y qué no?","acceptedAnswer":{"@type":"Answer","text":"Cubre el envío de un prestador para emergencias de plomería, electricidad, cerrajería, vidriería y armado de muebles. Incluye traslado y mano de obra por tiempo acotado; no cubre repuestos ni mejoras. Los trabajos cuentan con garantía y la cobertura tiene un tope por evento y un máximo anual de asistencias compartidas entre rubros."}},
+      {"@type":"Question","name":"Asistencia Hogar: ¿Hay límites por evento?","acceptedAnswer":{"@type":"Answer","text":"Sí. La asistencia tiene un tope económico por evento y un número máximo anual de eventos compartidos. Si el trabajo excede el tope o el tiempo incluido, se puede coordinar a costo preferencial para el beneficiario."}},
+
+      {"@type":"Question","name":"Asistencia Legal: ¿Qué incluye?","acceptedAnswer":{"@type":"Answer","text":"Incluye contacto telefónico con abogado para consultas en derecho laboral, civil, familia y mercantil, orientación en documentación y procesos habituales, e información tributaria. La redacción de documentos y el patrocinio en juicio corren por cuenta del beneficiario."}},
+      {"@type":"Question","name":"Asistencia Legal: ¿Hay atención presencial?","acceptedAnswer":{"@type":"Answer","text":"La asistencia contemplada es telefónica. Cualquier instancia presencial, así como la producción de documentos, presupuestos o tasas, no están incluidos y serán abonados por el beneficiario."}},
+
+      {"@type":"Question","name":"Asistencia Informática: ¿Cómo funciona el soporte?","acceptedAnswer":{"@type":"Answer","text":"Hay atención telefónica 24/7 para incidentes, guía para configurar equipos y periféricos, instalación asistida de anti‑spyware y consultas sobre software y hardware. Existen límites de eventos para ciertas prestaciones; un técnico a domicilio puede coordinarse con costo preferencial para el beneficiario."}},
+      {"@type":"Question","name":"Asistencia Informática: ¿Hay límites o topes?","acceptedAnswer":{"@type":"Answer","text":"Sí. Algunos servicios tienen un número de eventos anuales y/o un tope por intervención. Las consultas generales y la asistencia de seguridad pueden ser ilimitadas. Los servicios a domicilio no están incluidos en la cobertura económica."}},
+
+      {"@type":"Question","name":"Asistencia Mascotas: ¿Qué prestaciones ofrece?","acceptedAnswer":{"@type":"Answer","text":"Chequeos preventivos, urgencias veterinarias 24 hs con tope por evento, orientación veterinaria telefónica sin límites y orientación legal si la mascota ocasiona daños a terceros. En caso de demoras por autoridades, se brinda representación legal hasta la liberación."}},
+      {"@type":"Question","name":"Asistencia Mascotas: ¿Cuántos eventos cubre?","acceptedAnswer":{"@type":"Answer","text":"Los chequeos y urgencias tienen un número de eventos anuales y un tope económico por cada urgencia. La orientación telefónica no tiene límite de eventos."}},
+
+      {"@type":"Question","name":"Créditos: ¿Quiénes pueden solicitarlos?","acceptedAnswer":{"@type":"Answer","text":"Jubilados/as de la Caja de Jubilaciones, Pensiones y Retiros de Córdoba. El cobro se realiza por recibo de haberes, con monto máximo disponible sujeto a evaluación y normativa vigente."}},
+      {"@type":"Question","name":"Créditos: ¿Cuáles son las condiciones principales?","acceptedAnswer":{"@type":"Answer","text":"El monto, los plazos y la tasa se determinan conforme a la capacidad de pago y a la autorización de la entidad previsional. Se requiere documentación personal y previsional; la aprobación está sujeta a verificación."}}
+    ]
+  }
+  </script>
+</head>
+<body class="bg-light">
+<a class="visually-hidden-focusable position-absolute top-0 start-0 p-2 bg-white text-primary rounded-end" href="#contenido">Saltar al contenido</a>
+
+<header class="hero py-5 mb-4">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold mb-3">Servicios de Maitén Cooperativa</h1>
+        <p class="lead mb-4">Soluciones prácticas para tu hogar, tu tecnología, tus trámites legales, el cuidado de tus mascotas y créditos para jubilados. Información clara, descargas útiles y una landing para enviar documentos y recibir asesoramiento.</p>
+        <div class="d-flex gap-2 flex-wrap">
+          <a class="btn btn-light btn-lg text-primary fw-semibold" href="#servicios">Ver servicios</a>
+          <a class="btn btn-outline-light btn-lg" href="#landing">Quiero asesoramiento</a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center">
+        <picture>
+          <source type="image/webp" srcset="img\servicios-hero.webp" />
+          <img src="img/servicios-hero.webp" loading="lazy" decoding="async" alt="Ilustración de asistencia y servicios" width="480" height="320" class="img-fluid rounded shadow-sm"/>
+        </picture>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <section id="servicios" class="container mb-5">
+    <div class="row g-4">
+
+      <div class="col-12">
+        <div class="card service-card shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <svg class="icon-48 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 21h18v-2H3v2zm3-4h12l3-9H3l3 9zm3-7h6v2H9v-2z"/></svg>
+              <div>
+                <h2 class="h3 mb-1">Asistencia Hogar</h2>
+                <p class="mb-0 text-secondary">Emergencias y tareas puntuales en plomería, electricidad, cerrajería, vidriería y armado de muebles.</p>
+              </div>
+            </div>
+            <p class="mt-3">Beneficios: envío de prestador para emergencias del hogar, con traslado y mano de obra inicial incluidos y garantía en los trabajos. Requisitos: la cobertura aplica a eventos de urgencia, sobre instalaciones visibles y en el domicilio declarado; los repuestos, mejoras o trabajos de gran envergadura quedan a cargo del beneficiario. La asistencia tiene tope por evento y un máximo anual compartido entre rubros; si se supera, puede coordinarse continuidad a costo preferencial.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-7">
+                <div class="accordion faq-accordion" id="faqHogar">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHogar1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqHogarCollapse1" aria-expanded="true" aria-controls="faqHogarCollapse1">¿Qué cubre exactamente?</button></h3>
+                    <div id="faqHogarCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHogar1" data-bs-parent="#faqHogar">
+                      <div class="accordion-body">Emergencias de plomería, electricidad, cerrajería, vidriería y armado de muebles con un tiempo de mano de obra incluido. No cubre tareas de mejora ni mantenimiento.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHogar2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqHogarCollapse2" aria-expanded="false" aria-controls="faqHogarCollapse2">¿Hay límites por evento y por año?</button></h3>
+                    <div id="faqHogarCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHogar2" data-bs-parent="#faqHogar">
+                      <div class="accordion-body">Sí. La cobertura tiene tope económico por evento y un máximo anual de asistencias compartidas entre rubros. Si se supera, puede continuarse a costo preferencial.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHogar3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqHogarCollapse3" aria-expanded="false" aria-controls="faqHogarCollapse3">¿Los repuestos están incluidos?</button></h3>
+                    <div id="faqHogarCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHogar3" data-bs-parent="#faqHogar">
+                      <div class="accordion-body">No. Se consideran materiales básicos para emergencias, pero los repuestos (cañerías, cerraduras, griferías, etc.) corren por cuenta del beneficiario.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 bg-light border rounded-3 h-100">
+                  <h3 class="h6">Descargas útiles</h3>
+                  <ul class="list-unstyled small mb-0">
+                    <li><a href="docs/asistencia-hogar-tyc.pdf" download class="link-primary">Términos y Condiciones (PDF)</a></li>
+                    <li><a href="docs/asistencia-hogar-guia.pdf" download class="link-primary">Guía rápida de uso (PDF)</a></li>
+                    <li><a href="docs/asistencia-hogar-checklist.pdf" download class="link-primary">Checklist de emergencia (PDF)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card service-card shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <svg class="icon-48 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3 5 5 .8-3.6 3.6.9 5.2L12 13l-5.3 2.6.9-5.2L4 6.8l5-.8 3-5z"/></svg>
+              <div>
+                <h2 class="h3 mb-1">Asistencia Legal</h2>
+                <p class="mb-0 text-secondary">Contacto telefónico con abogados para consultas frecuentes y orientación documental/tributaria.</p>
+              </div>
+            </div>
+            <p class="mt-3">Beneficios: acceso a un abogado para consultas en derecho laboral, civil, familia y mercantil; guía para documentos y gestiones habituales; información tributaria. Requisitos: la asistencia incluida es telefónica y orientativa; la redacción de documentos, gestiones presenciales o patrocinio en procesos no están cubiertos y serán a cargo del beneficiario. Los casos complejos pueden derivar en presupuestos y aranceles externos.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-7">
+                <div class="accordion faq-accordion" id="faqLegal">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqLegal1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegalCollapse1" aria-expanded="true" aria-controls="faqLegalCollapse1">¿Qué temas puedo consultar?</button></h3>
+                    <div id="faqLegalCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqLegal1" data-bs-parent="#faqLegal">
+                      <div class="accordion-body">Laboral, civil, familia y mercantil; orientación en denuncias, robos, fallecimientos, contratos y trámites tributarios comunes.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqLegal2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegalCollapse2" aria-expanded="false" aria-controls="faqLegalCollapse2">¿Redactan documentos o me representan?</button></h3>
+                    <div id="faqLegalCollapse2" class="accordion-collapse collapse" aria-labelledby="faqLegal2" data-bs-parent="#faqLegal">
+                      <div class="accordion-body">La cobertura contempla asesoramiento telefónico. Documentos, presentaciones o representación requieren presupuesto y honorarios a cargo del beneficiario.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqLegal3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegalCollapse3" aria-expanded="false" aria-controls="faqLegalCollapse3">¿Cómo se coordina la atención?</button></h3>
+                    <div id="faqLegalCollapse3" class="accordion-collapse collapse" aria-labelledby="faqLegal3" data-bs-parent="#faqLegal">
+                      <div class="accordion-body">Se gestiona el contacto telefónico con un profesional especializado; si necesitás documentos o patrocinio, se coordina un presupuesto.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 bg-light border rounded-3 h-100">
+                  <h3 class="h6">Descargas útiles</h3>
+                  <ul class="list-unstyled small mb-0">
+                    <li><a href="docs/asistencia-legal-guia.pdf" download class="link-primary">Guía de casos frecuentes (PDF)</a></li>
+                    <li><a href="docs/asistencia-legal-modelos.pdf" download class="link-primary">Modelos orientativos (PDF)</a></li>
+                    <li><a href="docs/asistencia-legal-tyc.pdf" download class="link-primary">Términos y Alcances (PDF)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card service-card shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <svg class="icon-48 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 5h16v10H4V5zm-1 12h18v2H3v-2z"/></svg>
+              <div>
+                <h2 class="h3 mb-1">Asistencia Informática</h2>
+                <p class="mb-0 text-secondary">Soporte 24/7, configuración y orientación tecnológica; técnico a domicilio a costo preferencial.</p>
+              </div>
+            </div>
+            <p class="mt-3">Beneficios: soporte telefónico permanente para resolver incidencias; acompañamiento para configurar equipos y periféricos; instalación asistida de anti‑spyware; consultas sobre software y hardware; derivación de técnico a domicilio con costo preferencial. Requisitos: ciertos servicios poseen límites de eventos y/o topes económicos; el servicio a domicilio no está cubierto y se abona aparte. Las intervenciones están sujetas a disponibilidad y a las condiciones del equipo del beneficiario.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-7">
+                <div class="accordion faq-accordion" id="faqIT">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqIT1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqITCollapse1" aria-expanded="true" aria-controls="faqITCollapse1">¿La atención es 24/7?</button></h3>
+                    <div id="faqITCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqIT1" data-bs-parent="#faqIT">
+                      <div class="accordion-body">Sí, el soporte telefónico para incidentes está disponible todos los días, a toda hora, con límites de eventos para ciertos casos.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqIT2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqITCollapse2" aria-expanded="false" aria-controls="faqITCollapse2">¿Qué pasa si necesito un técnico a domicilio?</button></h3>
+                    <div id="faqITCollapse2" class="accordion-collapse collapse" aria-labelledby="faqIT2" data-bs-parent="#faqIT">
+                      <div class="accordion-body">Se coordina la visita con costo preferencial. El costo del servicio a domicilio es a cargo del beneficiario.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqIT3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqITCollapse3" aria-expanded="false" aria-controls="faqITCollapse3">¿Hay topes o límites?</button></h3>
+                    <div id="faqITCollapse3" class="accordion-collapse collapse" aria-labelledby="faqIT3" data-bs-parent="#faqIT">
+                      <div class="accordion-body">Algunas prestaciones tienen número de eventos y tope económico. Las consultas generales y la asistencia de seguridad pueden ser ilimitadas.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 bg-light border rounded-3 h-100">
+                  <h3 class="h6">Descargas útiles</h3>
+                  <ul class="list-unstyled small mb-0">
+                    <li><a href="docs/asistencia-it-guia.pdf" download class="link-primary">Guía de soporte (PDF)</a></li>
+                    <li><a href="docs/asistencia-it-seguridad.pdf" download class="link-primary">Buenas prácticas de seguridad (PDF)</a></li>
+                    <li><a href="docs/asistencia-it-tyc.pdf" download class="link-primary">Términos y Alcances (PDF)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card service-card shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <svg class="icon-48 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 9a2 2 0 110-4 2 2 0 010 4zm14 0a2 2 0 110-4 2 2 0 010 4zM7 13a3 3 0 106 0 3 3 0 00-6 0zm10 0a3 3 0 106 0 3 3 0 00-6 0z"/></svg>
+              <div>
+                <h2 class="h3 mb-1">Asistencia Mascotas</h2>
+                <p class="mb-0 text-secondary">Chequeos, urgencias 24 h, orientación veterinaria y apoyo legal relacionado con tu mascota.</p>
+              </div>
+            </div>
+            <p class="mt-3">Beneficios: chequeos preventivos anuales, coordinación de urgencias veterinarias con tope por evento, orientación telefónica sin límites y apoyo legal si tu mascota genera reclamos de terceros. Requisitos: los beneficios tienen cantidad de eventos anuales y topes; medicamentos, estudios o tratamientos no contemplados pueden correr por cuenta del beneficiario. La cobertura aplica a mascotas registradas y según disponibilidad de prestadores.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-7">
+                <div class="accordion faq-accordion" id="faqPets">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqPets1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqPetsCollapse1" aria-expanded="true" aria-controls="faqPetsCollapse1">¿Cuántos chequeos y urgencias cubre?</button></h3>
+                    <div id="faqPetsCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqPets1" data-bs-parent="#faqPets">
+                      <div class="accordion-body">Los chequeos y urgencias cuentan con número de eventos anuales y tope por cada urgencia. La orientación telefónica no tiene límite.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqPets2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPetsCollapse2" aria-expanded="false" aria-controls="faqPetsCollapse2">¿Incluye medicamentos o estudios?</button></h3>
+                    <div id="faqPetsCollapse2" class="accordion-collapse collapse" aria-labelledby="faqPets2" data-bs-parent="#faqPets">
+                      <div class="accordion-body">No están incluidos por defecto. Podrán presupuestarse según corresponda y correrán por cuenta del beneficiario.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqPets3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPetsCollapse3" aria-expanded="false" aria-controls="faqPetsCollapse3">¿Qué apoyo legal brindan?</button></h3>
+                    <div id="faqPetsCollapse3" class="accordion-collapse collapse" aria-labelledby="faqPets3" data-bs-parent="#faqPets">
+                      <div class="accordion-body">Orientación ante reclamos a terceros y representación hasta la liberación si hubiera una demora por autoridades.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 bg-light border rounded-3 h-100">
+                  <h3 class="h6">Descargas útiles</h3>
+                  <ul class="list-unstyled small mb-0">
+                    <li><a href="docs/mascotas-guia.pdf" download class="link-primary">Guía de cuidados y uso (PDF)</a></li>
+                    <li><a href="docs/mascotas-tyc.pdf" download class="link-primary">Términos y Alcances (PDF)</a></li>
+                    <li><a href="docs/mascotas-carta-adhesion.pdf" download class="link-primary">Carta de adhesión (PDF)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card service-card shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <svg class="icon-48 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+              <div>
+                <h2 class="h3 mb-1">Créditos a Jubilados (Caja Córdoba)</h2>
+                <p class="mb-0 text-secondary">Solicitudes con cobro por recibo de haberes y evaluación de capacidad de pago.</p>
+              </div>
+            </div>
+            <p class="mt-3">Beneficios: líneas de crédito para jubilados/as de la Caja de Jubilaciones, Pensiones y Retiros de Córdoba, con desembolso ágil y gestión acompañada. Requisitos: comprobante de haberes, DNI y documentación previsional; el monto, tasa y plazo se determinan tras evaluación y normativa vigente. El cobro se realiza por recibo de haberes y está sujeto a autorización de la entidad previsional.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-7">
+                <div class="accordion faq-accordion" id="faqCreditos">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqCred1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCredCollapse1" aria-expanded="true" aria-controls="faqCredCollapse1">¿Quiénes pueden solicitar?</button></h3>
+                    <div id="faqCredCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqCred1" data-bs-parent="#faqCreditos">
+                      <div class="accordion-body">Jubilados/as de la Caja de Jubilaciones, Pensiones y Retiros de Córdoba, conforme autorización vigente.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqCred2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCredCollapse2" aria-expanded="false" aria-controls="faqCredCollapse2">¿Cuál es el monto disponible?</button></h3>
+                    <div id="faqCredCollapse2" class="accordion-collapse collapse" aria-labelledby="faqCred2" data-bs-parent="#faqCreditos">
+                      <div class="accordion-body">El monto máximo disponible se define por la capacidad de pago y normativa vigente. Se informará durante la evaluación.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqCred3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCredCollapse3" aria-expanded="false" aria-controls="faqCredCollapse3">¿Qué documentación necesito?</button></h3>
+                    <div id="faqCredCollapse3" class="accordion-collapse collapse" aria-labelledby="faqCred3" data-bs-parent="#faqCreditos">
+                      <div class="accordion-body">DNI, recibo de haberes y documentación previsional requerida. Pueden solicitarse comprobantes adicionales según el caso.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 bg-light border rounded-3 h-100">
+                  <h3 class="h6">Descargas útiles</h3>
+                  <ul class="list-unstyled small mb-0">
+                    <li><a href="docs/creditos-requisitos.pdf" download class="link-primary">Requisitos y documentación (PDF)</a></li>
+                    <li><a href="docs/creditos-simulador.pdf" download class="link-primary">Simulador orientativo (PDF)</a></li>
+                    <li><a href="docs/creditos-tyc.pdf" download class="link-primary">Términos y Condiciones (PDF)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-4 bg-white border-top border-bottom">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <div class="trusted-badge h-100">
+            <div class="mb-2"><svg class="icon-32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.8 9-7 10-3.2-1-7-5-7-10V6l7-4z"/></svg></div>
+            <p class="mb-0 small">Cooperativa registrada (INAES)</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trusted-badge h-100">
+            <div class="mb-2"><svg class="icon-32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zm1-13h-2v6h6v-2h-4V8z"/></svg></div>
+            <p class="mb-0 small">Atención rápida y programada</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trusted-badge h-100">
+            <div class="mb-2"><svg class="icon-32" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4 2 2-6 6-4-4 2-2z"/></svg></div>
+            <p class="mb-0 small">Garantía en trabajos</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trusted-badge h-100">
+            <div class="mb-2"><svg class="icon-32" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3V3zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg></div>
+            <p class="mb-0 small">Documentos claros y descargables</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h2 class="h3">Personas que ya confían en nosotros</h2>
+        <div class="row g-3 mt-1">
+          <div class="col-6">
+            <div class="p-3 bg-white border rounded-3 h-100 text-center">
+              <div class="fs-3 fw-bold counter" data-target="8500" aria-live="polite">0</div>
+              <div class="small text-secondary">Beneficiarios activos</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 bg-white border rounded-3 h-100 text-center">
+              <div class="fs-3 fw-bold counter" data-target="96" aria-live="polite">0</div>
+              <div class="small text-secondary">% de satisfacción</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 bg-white border rounded-3 h-100 text-center">
+              <div class="fs-3 fw-bold counter" data-target="24" aria-live="polite">0</div>
+              <div class="small text-secondary">Provincias cubiertas</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 bg-white border rounded-3 h-100 text-center">
+              <div class="fs-3 fw-bold counter" data-target="365" aria-live="polite">0</div>
+              <div class="small text-secondary">Días al año</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <figure class="p-3 bg-white border rounded-3">
+          <blockquote class="blockquote mb-0">
+            <p>“Coordiné una urgencia de plomería un domingo y en menos de dos horas estaba resuelto. La guía por teléfono fue clave para contener la situación.”</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">María, beneficiaria</figcaption>
+        </figure>
+        <figure class="p-3 bg-white border rounded-3 mt-3">
+          <blockquote class="blockquote mb-0">
+            <p>“Solicité asesoramiento legal por una sucesión y me orientaron con claridad sobre los pasos y documentos.”</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">Carlos, beneficiario</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-4 bg-white">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <picture>
+            <source type="image/webp" srcset="img/galeria-1.webp" />
+            <img class="img-fluid rounded" src="img/galeria-1.webp" loading="lazy" decoding="async" width="320" height="200" alt="Técnico realizando una reparación"/>
+          </picture>
+        </div>
+        <div class="col-6 col-md-3">
+          <picture>
+            <source type="image/webp" srcset="img/galeria-2.webp" />
+            <img class="img-fluid rounded" src="img/galeria-2.webp" loading="lazy" decoding="async" width="320" height="200" alt="Asesoría legal por teléfono"/>
+          </picture>
+        </div>
+        <div class="col-6 col-md-3">
+          <picture>
+            <source type="image/webp" srcset="img/galeria-3.webp" />
+            <img class="img-fluid rounded" src="img/galeria-3.webp" loading="lazy" decoding="async" width="320" height="200" alt="Soporte informático a distancia"/>
+          </picture>
+        </div>
+        <div class="col-6 col-md-3">
+          <picture>
+            <source type="image/webp" srcset="img/galeria-4.webp" />
+            <img class="img-fluid rounded" src="img/galeria-4.webp" loading="lazy" decoding="async" width="320" height="200" alt="Atención veterinaria para mascotas"/>
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="landing" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h2 fw-bold">Asesorate hoy y subí tu documentación</h2>
+          <p class="mb-3">Beneficios claros, acompañamiento cercano y condiciones transparentes. Sumate a una cooperativa con trayectoria: sin letra chica, con información descargable y soporte real.</p>
+          <ul class="mb-4">
+            <li>✔ Atención humana y resolutiva</li>
+            <li>✔ Documentos y guías descargables</li>
+            <li>✔ Respuestas rápidas y seguimiento</li>
+          </ul>
+          <div class="d-flex gap-2 flex-wrap">
+            <span class="badge bg-light text-primary">+8.500 beneficiarios</span>
+            <span class="badge bg-light text-primary">96% satisfacción</span>
+            <span class="badge bg-light text-primary">Centrados en vos</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="bg-white text-dark rounded-3 p-4 shadow-sm" action="#" method="post" enctype="multipart/form-data" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label required">Nombre y apellido</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej.: Ana Pérez" required aria-describedby="nombreHelp">
+              <div id="nombreHelp" class="form-text">Como figura en tu DNI.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label required">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="nombre@correo.com" required aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Solo para enviarte la info. Nunca spam.</div>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ej.: 351 555 1234" aria-describedby="telHelp">
+              <div id="telHelp" class="form-text">Opcional. Nos ayuda a contactarte más rápido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="servicio" class="form-label required">Servicio de interés</label>
+              <select id="servicio" name="servicio" class="form-select" required>
+                <option value="" selected disabled>Elegí una opción</option>
+                <option>Asistencia Hogar</option>
+                <option>Asistencia Legal</option>
+                <option>Asistencia Informática</option>
+                <option>Asistencia Mascotas</option>
+                <option>Créditos a Jubilados</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="documentos" class="form-label">Adjuntá documentos (opcional)</label>
+              <input class="form-control" type="file" id="documentos" name="documentos" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx,.odt" aria-describedby="docHelp">
+              <div id="docHelp" class="form-text">Formato: PDF, imágenes o documentos. Máx. 10 MB c/u.</div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-control" rows="3" placeholder="Contanos brevemente tu consulta"></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="1" id="acepto" required>
+              <label class="form-check-label required" for="acepto">Acepto la <a class="link-primary" href="#" target="_blank" rel="noopener">Política de Privacidad</a></label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Quiero mi asesoramiento</button>
+              <small class="text-secondary mt-2">Respuesta en menos de 24 h hábiles.</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sticky-cta bg-white border-top py-2">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <span class="small text-secondary">¿Listo para dar el siguiente paso?</span>
+      <a href="#landing" class="btn btn-success">Iniciar asesoramiento</a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="py-4 bg-dark text-white">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+    <div class="small">© <span id="year"></span> Maitén Cooperativa</div>
+    <nav aria-label="Enlaces legales">
+      <a class="link-light me-3" href="#">Términos</a>
+      <a class="link-light" href="#">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  // Año dinámico
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Contadores accesibles cuando entran en viewport
+  const counters = document.querySelectorAll('.counter');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target; const target = +el.dataset.target; let n = 0; const step = Math.max(1, Math.floor(target/60));
+        const id = setInterval(() => { n += step; if(n >= target){ n = target; clearInterval(id);} el.textContent = n; }, 20);
+        io.unobserve(el);
+      }
+    });
+  }, {threshold: 0.5});
+  counters.forEach(c => io.observe(c));
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+Hay que armar una nueva pagina de Servicios, con: 
++ Una descripción, de no más de 120 palabras, de sus beneficios y requisitos por cada servicio.
++ Un bloque de preguntas frecuentes por servicio.
++ Una opción para descargar documentos con información relacionada.
++ Un diseño tanto para computadora como para dispositivos moviles.
++ Un landing al final de la pagina.
++ Una opción para enviar algún/os documento/s(in coorporada en el landing).
+y tiene que utilizar Boostrap 5.
+Recordá que una landing no se trata solo de insertar un formulario. Necesita elementos que convenzan: beneficios claros, testimonios, badges de confianza, contadores de usuarios satisfechos, micro-copys que reduzcan la fricción, CTA visibles, etc. El formulario es para obtener datos; la persuasión es lo que permite que el cliente lo llene.
+Requisitos técnicos:
++ Bootstrap 5 sin dependencias extra.
++ Imágenes WebP con lazy-loading.
++ Títulos H1/H2 optimizados, meta-descripción y Schema FAQ.
++ Puntuación Lighthouse ≥ 90 en rendimiento y accesibilidad.
