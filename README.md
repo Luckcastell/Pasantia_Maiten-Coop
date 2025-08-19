@@ -9,21 +9,35 @@ Está diseñado para lograr **alta puntuación en Lighthouse** (≥90 en rendimi
 
 /maiten_servicios/
 ├── index.html
+
 ├── img/
+
 │ ├── servicios-hero.webp
 
 │ ├── galeria-1.webp
+
 │ ├── galeria-2.webp
+
 │ ├── galeria-3.webp
+
 │ └── galeria-4.webp
+
 └── docs/
+
 ├── plomeria.pdf
+
 ├── electricidad.pdf
+
 ├── cerrajeria.pdf
+
 ├── vidrieria.pdf
+
 ├── armado-muebles.pdf
+
 ├── asistencia-legal.pdf
+
 ├── asistencia-informatica.pdf
+
 └── asistencia-mascotas.pdf
 
 - **index.html** → Página principal, con todo el código inline (HTML, CSS y JS minificado).  
