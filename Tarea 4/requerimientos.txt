@@ -7,6 +7,7 @@ Hay que armar una nueva pagina de Servicios, con:
 + Una opción para enviar algún/os documento/s(in coorporada en el landing).
 y tiene que utilizar Boostrap 5.
 Recordá que una landing no se trata solo de insertar un formulario. Necesita elementos que convenzan: beneficios claros, testimonios, badges de confianza, contadores de usuarios satisfechos, micro-copys que reduzcan la fricción, CTA visibles, etc. El formulario es para obtener datos; la persuasión es lo que permite que el cliente lo llene.
+
 Requisitos técnicos:
 + Bootstrap 5 sin dependencias extra.
 + Imágenes WebP con lazy-loading.
