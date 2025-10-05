@@ -1,0 +1,5 @@
+# Seguridad básica para /uploads
+Options -Indexes
+<FilesMatch "\.(php|phtml|php5|php7|phar|cgi|pl|asp|aspx)$">
+  Require all denied
+</FilesMatch>
