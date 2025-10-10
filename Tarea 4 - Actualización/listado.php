@@ -104,7 +104,6 @@ if ($consultas) {
     @media (prefers-reduced-motion: reduce){ .animate{transition:none!important} }
   </style>
 
-  <!-- FAQ Schema (JSON-LD). -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -162,11 +161,21 @@ if ($consultas) {
           <select class="form-select" name="servicio">
             <option value="">Todos</option>
             <?php
-              $servicios = ['Plomería','Electricidad','Cerrajería','Vidriería','Armado de muebles','Asistencia Legal','Asistencia Informática','Mascotas','Créditos a Jubilados'];
-              foreach ($servicios as $_s) {
-                $sel = ($servicio === $_s) ? 'selected' : '';
-                echo '<option ' . $sel . '>' . htmlspecialchars($_s) . '</option>';
+              // --- CÓDIGO CORREGIDO PARA COMPATIBILIDAD CON FORMULARIO ---
+              // Usamos el valor corto como clave (lo que se guarda en la DB) y la descripción para el usuario.
+              $servicios = [
+                  'Hogar'              => 'Asistencia Hogar', 
+                  'Legal'              => 'Asistencia Legal',
+                  'Informatica'        => 'Asistencia Informática',
+                  'Mascotas'           => 'Asistencia Mascotas',
+                  'Otro'               => 'Otra Consulta',
+                  'Créditos a Jubilados' => 'Créditos a Jubilados' // Mantenemos por si hay un formulario adicional
+              ];
+              foreach ($servicios as $value => $label) {
+                $sel = ($servicio === $value) ? 'selected' : '';
+                echo '<option value="' . htmlspecialchars($value) . '" ' . $sel . '>' . htmlspecialchars($label) . '</option>';
               }
+              // --- FIN CÓDIGO CORREGIDO ---
             ?>
           </select>
         </div>
