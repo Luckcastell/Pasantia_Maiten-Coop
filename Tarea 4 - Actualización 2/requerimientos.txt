@@ -1,0 +1,10 @@
+Explicame como realizar los siguientes cambios:
+1) En config agregar una variable para el url destino de productos, que el archivo servicios en todos los links a esa variable use la variable, en caso de no estar completada el destino debe ser #.
+2) Las exclusiones de los servicios tienen que estar en un tamaño de texto menor a la descripción del servicio, ya que tiene una jerarquia de lectura inferior.
+3) los niveles de texto de descripcion y servicios deben quedar igualados para evitar que un servicio quede por encima de otro generando diseños mal formados que quedan mal a la vista.
+4) El texto a la izquierda del formulario de contacto sigue quedando centrado en altura, la idea es que tmoe desde la parte superior.
+5) Falta el recaptcha, poner su configuracion en un archivo .env para que la tome desde ahí.
+6) Cambiar los motivos de consulta por: Reclamo, Consulta, Adquisición y utilizar un select con buscador integrado
+7) Agregar un link en "terminos y condiciones" que abra un modal con los mismos
+8) Luego del FAQ agregar un espacio o algun elemento visual para que el sitio no corte abruptamente. 
+9) Agregar favicon al archivo.
