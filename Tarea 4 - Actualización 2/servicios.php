@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
     
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -83,7 +84,7 @@
             color: var(--azul);
         }
     </style>
-    <script src="https://www.google.com/recaptcha/api.js?render=CLAVE_DE_SITIO" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo urlencode($RECAPTCHA_SITE_KEY ?? ''); ?>" async defer></script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -373,7 +374,7 @@
                 <div class="row justify-content-center g-4">
                     
                     <div class="col-lg-6">
-                        <div class="p-4 p-md-5 h-100 d-flex flex-column justify-content-center">
+                        <div class="p-4 p-md-5 h-100 d-flex flex-column justify-content-start">
                             <h3 class="fw-bold display-6 mb-3">Tu consulta en 3 simples pasos</h3>
                             <p class="lead">Para brindarte una atención más eficiente y coordinada, te pedimos que completes todos los campos obligatorios del formulario.</p>
 
@@ -416,17 +417,12 @@
 
                                 <div class="mb-3">
                                     <label for="motivo_consulta" class="form-label required">Motivo de la consulta</label>
-                                    <select class="form-select" id="motivo_consulta" name="motivo_consulta" required aria-required="true">
-                                        <option value="" disabled selected>Seleccioná el servicio</option>
-                                        <option value="plomeria">Asistencia Hogar: Plomería</option>
-                                        <option value="electricidad">Asistencia Hogar: Electricidad</option>
-                                        <option value="cerrajeria">Asistencia Hogar: Cerrajería</option>
-                                        <option value="vidrieria">Asistencia Hogar: Vidriería</option>
-                                        <option value="muebles">Asistencia Hogar: Armado de Muebles</option>
-                                        <option value="legal">Asistencia Legal</option>
-                                        <option value="informatica">Asistencia Informática</option>
-                                        <option value="mascotas">Asistencia Mascotas</option>
-                                        </select>
+                                    <select class="form-select" id="motivo_consulta" name="motivo_consulta" required aria-required="true" data-search="true">
+        <option value="" disabled selected>Seleccioná el motivo</option>
+        <option value="reclamo">Reclamo</option>
+        <option value="consulta">Consulta</option>
+        <option value="adquisicion">Adquisición</option>
+    </select>
                                     <div class="invalid-feedback">Por favor, seleccioná el motivo de tu consulta.</div>
                                 </div>
                                 
@@ -611,6 +607,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
     <script>
     (
@@ -618,7 +615,7 @@
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
             // Constante para reCAPTCHA (Debe ser reemplazada por una clave real)
-            const CLAVE_SITIO_RECAPTCHA = 'CLAVE_DE_SITIO'; 
+            const CLAVE_SITIO_RECAPTCHA = '<?php echo htmlspecialchars($RECAPTCHA_SITE_KEY ?? '', ENT_QUOTES, 'UTF-8'); ?>'; 
             
             const form_html = document.getElementById('form-consulta');
             const resultado_div = document.getElementById('resultado');

@@ -23,6 +23,22 @@ $CONF_URLS = [
     'contacto'  => 'contacto.html'
 ];
 
+// --- CONFIGURACIÓN reCAPTCHA DESDE ARCHIVO .ENV (Punto 5) ---
+// Se espera un archivo .env en la raíz del proyecto con, al menos:
+// RECAPTCHA_SITE_KEY="tu_clave_de_sitio"
+// RECAPTCHA_SECRET_KEY="tu_clave_secreta"
+$ENV = [];
+$envFile = __DIR__ . '/.env';
+if (is_readable($envFile)) {
+    $parsed = parse_ini_file($envFile, false, INI_SCANNER_TYPED);
+    if (is_array($parsed)) {
+        $ENV = $parsed;
+    }
+}
+$RECAPTCHA_SITE_KEY   = $ENV['RECAPTCHA_SITE_KEY']   ?? '';
+$RECAPTCHA_SECRET_KEY = $ENV['RECAPTCHA_SECRET_KEY'] ?? '';
+
+
 // Función auxiliar para obtener el link o '#' si está vacío
 function getLink($key) {
     global $CONF_URLS;
